@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/garrett-fiorito/appointmentScheduler/issues"
   },
-  "homepage": "https://github.com/garrett-fiorito/appointmentScheduler#readme"
+  "homepage": "https://github.com/garrett-fiorito/appointmentScheduler#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
+  }
 }
