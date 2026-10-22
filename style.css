@@ -1,0 +1,16 @@
+:root {
+    --body-background: #D0D1D5; 
+    --main-background: #1D456D;
+    --main-text: #152B42; 
+}
+
+*, *::before, *::after {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: var(--body-background); 
+    margin: 1rem auto; 
+}
