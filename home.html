@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduler</title>
+</head>
+<body>
+    <nav>Appointment Scheduler</nav>
+    <h1>Book an Appointment</h1>
+
+    <h2>First Name</h2>
+    <form action="/submit-path" method="POST">
+        <input type="text" id="fname" name="firstname" placeholder="John" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Last Name</h2>
+    <form action="/submit-path" method="POST">
+        <input type="text" id="lname" name="last" placeholder="" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="/submit-path" method="POST">
+        <h2>Meeting Date</h2>
+        <input type="date" id="birthdate" name="selectedDate" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="/submit-path" method="POST">
+        <h2>Meeting Time</h2>
+        <input type="time" id="appt-time" name="selectedTime" required>
+        <button type="submit">Submit</button>
+</form>
+
+<button type="submit">Book an Appointment</button>
+
+</body>
+</html>
