@@ -9,8 +9,25 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
     res.sendFile(`${import.meta.dirname}/views/home.html`);
+});
+
+app.get("/submit-appointment", (req, res) => {
+    res.sendFile(`${import.meta.dirname}/views/submit.html`);
+})
+
+app.post("/submit-appointment", (req,res) => {
+    console.log(req.body); 
+    const appointment = req.body; 
+    appointment["timestamp"] = new Date();
+
+    appointments.push(appointment); 
+    res.sendFile(`${import.meta.dirname}/views/submit.html`);
+});
+
+app.get("/admin", (req,res) => {
+    res.send(appointments); 
 })
 
 app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${3004}`);
-});
+    console.log(`Sever running at http://localhost:${PORT}`);
+})
